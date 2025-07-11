@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Filter with List</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-black text-white flex flex-col items-center justify-center h-screen w-full gap-8">
+    <h2 class="text-[5vh]">Upload Files to Filter</h2>
+  <form method="POST" enctype="multipart/form-data" class="border-2 border-gray-500 p-4 rounded-md flex flex-col items-center text-[2vh]">
+    <label>Data File (CSV):
+    <input type="file" name="data_file" placeholder="choose file" class="bg-gray-400 border-2 text-center rounded-md text-white flex p-4 item-center justify-center" required><br><br>
+ </label>
+    <label>SYMBOLs File (CSV):
+    <input type="file" name="symbols_file" placeholder="choose file" class="bg-gray-400 border-2 text-center rounded-md text-white flex p-4 item-center justify-center" required><br><br>
+    </label>
+
+    <button type="submit">Filter & Download</button>
+  </form>
+</body>
+</html>
